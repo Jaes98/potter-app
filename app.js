@@ -124,7 +124,7 @@ function showCharacter(character) {
 document.querySelector("#characters").insertAdjacentHTML("beforeend", myHtml);
 document.querySelector("#characters article:last-child").addEventListener("click", characterClicked)
 function characterClicked() {
-    document.querySelector("#dialog-name").textContent = character.name;
+    document.querySelector("#dialog-name").textContent = "Name: "+character.name;
     document.querySelector("#dialog-img").src = character.image;
     document.querySelector("#dialog-house").textContent = character.house;
     document.querySelector("#dialog-birthday").textContent = character.dateOfBirth;
